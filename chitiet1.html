@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/chitiet.css">
+    <link rel="shortcut icon" href="img/chitiet.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Chi tiết sản phẩm</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__narbar-bot">
+                <ul class="navbar-bot__Logo">
+                    <li>
+                        <a href="index.html">LingFoods</a>
+                    </li>
+                </ul>
+                <ul class="navbar-bot__list">
+                    <li class="navbar__item">
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="">Shop</a>
+                        <ul class="navbar-bot__navbar-list-sub">
+                            <li class="navbar__item">
+                                <a href="">Shop</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="">Wishlist</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="">Single product</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="giohang.html">Cart</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="dangkigd2.html">Checkout</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="">Blog</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="">Login</a>
+                        <ul class="navbar-bot__navbar-list-sub">
+                            <li class="navbar__item">
+                                <a href="login.html">Login</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="dangkigd1.html">Sign up</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="giohang.html"> <i class="fa-solid fa-cart-shopping"> </i> </a>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+    <section class="detail-one">
+        <div class="banner-detail banner_dt-top">
+
+        </div>
+
+
+        <div class="body-detail">
+            <div class="body-detail body-dt-left">
+
+                <div class="detail-picture">
+                    <img src="img/product-1.jpg" alt="">
+                    <div class="picture-phu">
+                        <!-- <img src="img/hat-giong-ot-chuong-2.jpg" alt=""> -->
+                        <!-- <img src="img/rot1.jpeg" alt="">
+                        <img src="img/ot-chuong-xanh-da-lat.jpg" alt="">
+                        <img src="img/Ớt-Chuông-Vàng.jpg" alt=""> -->
+                    </div>
+                </div>
+
+                <div class="detail-content">
+                    <div class="content-text">
+                        <div class="name-product" id="name-product">
+                            <p>BELL PEPPER</p>
+                        </div>
+                        <div class="price-product" id="price-product">
+                            <p>80</p>
+                        </div>
+                        <p class="describe" style="color: black;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, temporibus. Eaque soluta
+                            rem,
+                            rerum distinctio atque esse iste, ipsum animi obcaecati facere, porro inventore iusto
+                            tempora quae consequuntur voluptatem suscipit?
+                        </p>
+                        <p class="add-detail">
+                            CATEGORY: <span class="cag">Vegetable</span> <br>
+                            TAGS: <span class="cag">celery, vegetables</span>
+                        </p>
+                        <div class="add-tail">
+                            <button class="btn-add-cart" id="add" onclick="addProduct1()">Add To Cart</button>
+                            <button class="add-heart" id="add-heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-detail body-dt-right">
+                <div class="detail-right search">
+                    <legend>Search</legend>
+                    <input type="text" class="search" placeholder="Tìm kiếm"> <a href="">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+
+                </div>
+                <div class="detail-right categories">
+                    <legend>Categories</legend>
+                    <ul>
+                        <li class="categories-item">Diet (5)</li>
+                        <li class="categories-item">General (4)</li>
+                        <li class="categories-item"> Organic Food (5)</li>
+                        <li class="categories-item">Organic Gardening (8)</li>
+                        <li class="categories-item"> Recipes (1)</li>
+                        <li class="categories-item">Super Food (4)</li>
+                        <li class="categories-item">Tips & Guides (5)</li>
+                        <li class="categories-item">Uncategorized (3)</li>
+                    </ul>
+                </div>
+                <div class="detail-right popular"></div>
+                <div class="detail-right tags"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="slide-show" >       
+        <div id="container-slide">
+
+        </div>
+    </section>
+
+    <div class="boxs" id="listProduct">
+    </div>
+ 
+    <!-- 
+    <div class="boxs">
+    
+        <div class="boxs-item">
+            <div class="boxs-item__pic">
+                <img src="img/product-1.jpg" alt="">
+            </div>
+
+            <div class="boxs-item__desc">
+                <p class="boxs-item__desc--top"> <a href="">BELL PEPPER</a> </p>
+                <p class="boxs-item__desc--bot"><del class="del">$120</del>$80</p>
+                <div class="btn-add-cart" id="add">Add To Cart</div>
+
+                <span class="boxs-item__desc--sale">30%</span>
+            </div>
+        </div>
+
+        <div class="boxs-item">
+            <div class="boxs-item__pic">
+                <img src="img/product-7.jpg" alt="">
+
+            </div>
+            <div class="boxs-item__desc">
+                <p class="boxs-item__desc--top"> <a href=""> CARROTS</a></p>
+                <p class="boxs-item__desc--bot">$150</p>
+                <div class="btn-add-cart" id="add">Add To Cart</div>
+            </div>
+        </div>
+        <div class="boxs-item">
+            <div class="boxs-item__pic">
+                <img src="img/product-3.jpg" alt="">
+
+            </div>
+            <div class="boxs-item__desc">
+                <p class="boxs-item__desc--top"> <a href=""> GREEN BEANS</a></p>
+                <p class="boxs-item__desc--bot">$30</p>
+                <div class="btn-add-cart" id="add">Add To Cart</div>
+
+            </div>
+        </div>
+        <div class="boxs-item">
+            <div class="boxs-item__pic">
+                <img src="img/product-4.jpg" alt="">
+
+            </div>
+            <div class="boxs-item__desc">
+                <p class="boxs-item__desc--top"> <a href="">PURPLE CABBAGE</a> </p>
+                <p class="boxs-item__desc--bot">$100</p>
+                <div class="btn-add-cart" id="add">Add To Cart</div>
+
+
+            </div>
+        </div>
+    </div> -->
+
+    <footer class="footer">
+        <div class="footer-clm">
+            <div class="footer-clm__text">
+
+                <h2>LingFoods</h2>
+                <p id="special">Far far away, behind the word mountains, far from the countries Vokalia and
+                    Consonantia.
+
+                </p>
+                <ul class="footer-clm__icon">
+                    <li class="footer-clm__icon-item">
+                        <i class="fa-brands fa-facebook"></i>
+                    </li>
+                    <li class="footer-clm__icon-item">
+                        <i class="fa-brands fa-square-twitter">
+
+                        </i>
+                    </li>
+                    <li class="footer-clm__icon-item">
+                        <i class="fa-brands fa-instagram"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-clm__text">
+                <ul class="footer-clm__text--menu">
+                    <li class="footer-clm__text--menu-item">
+                        <h2>Menu</h2>
+                    </li>
+                    <li class="footer-clm__text--menu-item">Shop</li>
+                    <li class="footer-clm__text--menu-item">About</li>
+                    <li class="footer-clm__text--menu-item">Journal</li>
+                    <li class="footer-clm__text--menu-item">Contact Us</li>
+                </ul>
+            </div>
+            <div class="footer-clm__text">
+
+                <ul class="footer-clm__text--menu">
+                    <li class="footer-clm__text--menu-item">
+                        <h2>Help</h2>
+                    </li>
+                    <li class="footer-clm__text--menu-item">Shipping Information</li>
+                    <li class="footer-clm__text--menu-item">Returns & Exchange</li>
+                    <li class="footer-clm__text--menu-item">Terms & Conditions</li>
+                    <li class="footer-clm__text--menu-item">Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-clm__text">
+                <ul class="footer-clm__text--menu">
+                    <li class="footer-clm__text--menu-item">
+                        <h2>Have a Questions?</h2>
+                    </li>
+                    <li class="footer-clm__text--menu-item">
+                        <i class="fa-sharp fa-solid fa-location-dot" id="icon-menu"></i>
+                        96/10 TX25, Phường Thạnh Xuân, Quận 12, Tp.Hồ Chí Minh, ViệtNam
+                    </li>
+                    <li class="footer-clm__text--menu-item">
+                        <i class="fa-sharp fa-solid fa-phone" id="icon-menu"></i>
+                        0889456201
+                    </li>
+                    <li class="footer-clm__text--menu-item">
+                        <i class="fa-sharp fa-solid fa-envelope" id="icon-menu"></i>
+                        mylinh.khanhhung@gmail.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-row">
+            <p class="footer-row__text">Copyright ©2023 All rights reserved | This template is made with <i
+                    class="fa-solid fa-heart"></i><a> by LinLin </a>references from <strong> <a
+                        href="https://www.niemvuilaptrinh.com/">niemvuilaptrinh</a> </strong>
+            </p>
+        </div>
+    </footer>
+    <script src="JS/detail.js"></script>
+    <script src="JS/app.js">
+        
+    </script>
+</body>
+
+</html>
