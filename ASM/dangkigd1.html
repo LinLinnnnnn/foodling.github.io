@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/formdkdg1.css">
+    <title>Sign up</title>
+</head>
+<style>
+    body {
+      padding: 30px;
+       max-width: 1000px;
+        margin: 0 auto;
+    }
+</style>
+
+
+<body>
+    <form id="formDangKi" action="login.html"  onsubmit="return formDangKi()" >
+        <div class="container-form">
+            <div class="header-form">
+                <h3 class="header-heading">Đăng Kí LingFoods</h3>
+                <a style="text-decoration: none; border: 0px;" href="login.html"><span class="button-switch">Đăng Nhập</span></a>
+            </div>
+
+            <div class="imgcontainer">
+                <img src="img/category-1.jpg" alt="Avatar" class="avatar">
+            </div>
+            <div class="container__body">
+                <p id="showTextName"></p>
+                <div class="form-group form-double">
+                    <div class="form-group form-50">
+                         Nhập họ:  
+                        <input type="text" class="form-input" id="lname" placeholder="Nhập họ ">
+                    </div>
+                    <div class="form-group form-50">
+                         Nhập tên:  
+                        <input type="text" class="form-input" id="fname" placeholder="Nhập tên">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Giới tính: </legend>
+                        <div id="sex">
+                            <input type="radio" name="gender">Nam
+                            <input type="radio" name="gender" checked>Nữ
+                            <input type="radio" name="gender">Khác
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group form-love">
+
+                    <div class="form-group">
+                        <legend>Nghề nghiệp: </legend>
+                        <select name="" id="">
+                            <option value="">Phi công</option>
+                            <option value="">Lập trình viên</option>
+                            <option value="">Kế toán</option>
+                            <option value="">Bác sĩ</option>
+                            <option value="" selected>Diễn viên</option>
+                            <option value="">Khác</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p id="showTextPhone"></p>
+                    <input id="sdt" type="text" class="form-input" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="form-group">
+                <p id="showTextPsw"></p>
+                    <input id="matkhau" type="password" class="form-input" placeholder="Nhập mật khẩu" onchange="checkpsw1()" >
+                </div>
+                <div class="form-group">
+                    <input id="matkhau2" type="password" onblur="checkpsw()" onchange="checkpsw1()" class="form-input" placeholder="Nhập lại mật khẩu">
+                </div>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Rau củ yêu thích </legend>
+                    <div class="checkbox">
+                        <input type="checkbox"> Cải xanh
+                        <input type="checkbox"> Xà lách
+                        <input type="checkbox"> Rau thơm
+                        <input type="checkbox"> Cà chua
+                        <input type="checkbox"> Dưa leo
+                        <input type="checkbox"> Khác
+                    </div>
+                </fieldset>
+            </div>
+            <div class="container__next-footer">
+                <p class="text-private">Bằng việc đăng kí bạn đã đồng ý với LingFoods về
+                    <a href="" class="link-private">Điều khoản dịch vụ </a>&
+                    <a href="" class="link-private"> Chính sách bảo mật</a>
+                </p>
+            </div>
+            <div class="control-form">
+                <button class="btn btn-hover"><a href="vegetable.html">Trở lại</a></button>
+                <button class=" btn btn-main" type="submit"> Đăng kí</button>
+                <!-- <button class=" btn btn-main" type="button" onclick="formDangK()"> try</button> -->
+
+            </div>
+        </div>
+    </form>
+    <div class="footer-social">
+        <a href="" class="btn-icon btn-google"><i class="fa-solid fa-g"></i>
+            Kết nối với Google</a>
+        <a href="" class="btn-icon btn-fb"><i class="fa-brands fa-facebook"></i>
+            Kết nối với Facebook</a>
+    </div>
+    <script src="JS/form.js"></script>
+</body>
+
+</html>
